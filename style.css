@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Formula1-Regular';
+    src: url(fonts/Formula1-Regular.otf), format('truetype');
+}
+
+.font {
+    font-family: 'Formula1-Regular' , sans-serif;
+    font-style: italic;
+}
+
+.red {
+    color: #DC291E; 
+}
+
+.navbar-nav .nav-item .nav-link {
+    text-decoration: none; 
+    position: relative; 
+}
+
+.navbar-nav .nav-item .nav-link::before {
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    bottom: -2px; 
+    width: 0; 
+    height: 2px; 
+    background-color: #DC291E; 
+    transition: width 0.9s ease; 
+}
+
+.navbar-nav .nav-item .nav-link:hover::before {
+    width: 100%; 
+}
+
+.carousel-item{
+    height: 92.2vh;
+    min-height: 300px;
+}
+
+.carousel-item img{
+    background-size: cover;
+}
+
+.carousel-caption{
+    bottom: 40%;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1.7px;
+}
+
+.carousel-caption p{
+    width: 100%;
+    margin: auto;
+    font-size: 18px;
+}
+
+.dark-image {
+    filter: brightness(0.3); 
+}
+
+
